@@ -1,0 +1,98 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<Layout title="About Nostr - Nostr BCH" description="Learn about the Nostr protocol and how it enables decentralized social networking">
+  <Header />
+  
+  <main class="pt-16">
+    <section class="bg-gradient-to-br from-nostr-purple to-nostr-dark-purple dark:from-nostr-dark-purple dark:to-purple-900 text-white py-20 transition-colors duration-300">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <h1 class="text-4xl md:text-5xl font-bold mb-6">What is Nostr?</h1>
+        <p class="text-xl text-purple-100 dark:text-purple-200 max-w-3xl mx-auto">
+          Nostr (Notes and Other Stuff Transmitted by Relays) is a simple, open protocol that enables global, decentralized, and censorship-resistant social media.
+        </p>
+      </div>
+    </section>
+    
+    <section class="py-16 bg-white dark:bg-gray-900 transition-colors duration-300">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="prose prose-lg max-w-none">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-12 mb-16">
+            <div>
+              <h2 class="text-2xl font-bold text-gray-900 dark:text-white mb-4">How Nostr Works</h2>
+              <p class="text-gray-600 dark:text-gray-300 mb-6">
+                Nostr uses a simple client-relay architecture. Users generate cryptographic key pairs and publish signed messages to relays, which then distribute these messages to other users.
+              </p>
+              <ul class="space-y-3 text-gray-600 dark:text-gray-300">
+                <li class="flex items-start">
+                  <svg class="w-5 h-5 text-nostr-purple dark:text-nostr-light-purple mt-1 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                  </svg>
+                  No central authority or server
+                </li>
+                <li class="flex items-start">
+                  <svg class="w-5 h-5 text-nostr-purple dark:text-nostr-light-purple mt-1 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                  </svg>
+                  Cryptographically signed messages
+                </li>
+                <li class="flex items-start">
+                  <svg class="w-5 h-5 text-nostr-purple dark:text-nostr-light-purple mt-1 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                  </svg>
+                  Distributed across multiple relays
+                </li>
+                <li class="flex items-start">
+                  <svg class="w-5 h-5 text-nostr-purple dark:text-nostr-light-purple mt-1 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                  </svg>
+                  Users own their identity and data
+                </li>
+              </ul>
+            </div>
+            
+            <div>
+              <h2 class="text-2xl font-bold text-gray-900 dark:text-white mb-4">Key Benefits</h2>
+              <div class="space-y-4">
+                <div class="bg-gray-50 dark:bg-gray-800 p-4 rounded-lg border dark:border-gray-700">
+                  <h3 class="font-semibold text-gray-900 dark:text-white mb-2">Censorship Resistance</h3>
+                  <p class="text-gray-600 dark:text-gray-300 text-sm">No single entity can control or censor your messages</p>
+                </div>
+                <div class="bg-gray-50 dark:bg-gray-800 p-4 rounded-lg border dark:border-gray-700">
+                  <h3 class="font-semibold text-gray-900 dark:text-white mb-2">Identity Ownership</h3>
+                  <p class="text-gray-600 dark:text-gray-300 text-sm">Your identity is based on your cryptographic keys, not a username</p>
+                </div>
+                <div class="bg-gray-50 dark:bg-gray-800 p-4 rounded-lg border dark:border-gray-700">
+                  <h3 class="font-semibold text-gray-900 dark:text-white mb-2">Interoperability</h3>
+                  <p class="text-gray-600 dark:text-gray-300 text-sm">Use any client with any relay - no vendor lock-in</p>
+                </div>
+                <div class="bg-gray-50 dark:bg-gray-800 p-4 rounded-lg border dark:border-gray-700">
+                  <h3 class="font-semibold text-gray-900 dark:text-white mb-2">Simplicity</h3>
+                  <p class="text-gray-600 dark:text-gray-300 text-sm">Simple protocol that's easy to understand and implement</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="bg-gradient-to-r from-nostr-purple to-nostr-light-purple dark:from-nostr-dark-purple dark:to-purple-800 rounded-xl p-8 text-white mb-12">
+            <h2 class="text-2xl font-bold mb-4">NIPs (Nostr Implementation Possibilities)</h2>
+            <p class="mb-4">
+              NIPs define the standards for how Nostr clients and relays should work together. They ensure interoperability across the entire ecosystem.
+            </p>
+            <a href="https://github.com/nostr-protocol/nips" class="inline-flex items-center text-white hover:text-gray-200 transition-colors">
+              View all NIPs on GitHub
+              <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  
+  <Footer />
+</Layout>

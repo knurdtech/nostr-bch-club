@@ -1,0 +1,141 @@
+---
+const navItems = [
+  { name: 'About Nostr', href: '/nostr' },
+  { name: 'Bitcoin Cash', href: '/bch' },
+  { name: 'Opportunities', href: '/opportunities' },
+  { name: 'Directory', href: '/directory' },
+  { name: 'Get Started', href: '/get-started' },
+  { name: 'Resources', href: '/resources' },
+];
+---
+
+<header class="bg-white dark:bg-gray-800 shadow-sm dark:shadow-gray-700/20 sticky top-0 z-50 transition-colors duration-300">
+  <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex justify-between items-center h-16">
+      <div class="flex items-center">
+        <a href="/" class="flex items-center space-x-2">
+          <div class="w-8 h-8 bg-gradient-to-r from-nostr-purple to-bch-green rounded-lg flex items-center justify-center">
+            <span class="text-white font-bold text-sm">N</span>
+          </div>
+          <span class="text-xl font-bold text-gray-900 dark:text-white">Nostr BCH</span>
+        </a>
+      </div>
+      
+      <div class="hidden md:flex items-center space-x-4">
+        <div class="flex items-baseline space-x-4">
+          {navItems.map((item) => (
+            <a
+              href={item.href}
+              class="text-gray-700 dark:text-gray-300 hover:text-nostr-purple dark:hover:text-nostr-light-purple px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200"
+            >
+              {item.name}
+            </a>
+          ))}
+        </div>
+        
+        <!-- Theme Toggle Button -->
+        <button
+          id="theme-toggle"
+          type="button"
+          class="text-gray-700 dark:text-gray-300 hover:text-nostr-purple dark:hover:text-nostr-light-purple p-2 rounded-md transition-colors duration-200"
+          aria-label="Toggle theme"
+        >
+          <svg id="theme-toggle-dark-icon" class="hidden w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+            <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
+          </svg>
+          <svg id="theme-toggle-light-icon" class="hidden w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+            <path fill-rule="evenodd" d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" clip-rule="evenodd"></path>
+          </svg>
+        </button>
+      </div>
+      
+      <div class="md:hidden flex items-center space-x-2">
+        <!-- Mobile Theme Toggle -->
+        <button
+          id="mobile-theme-toggle"
+          type="button"
+          class="text-gray-700 dark:text-gray-300 hover:text-nostr-purple dark:hover:text-nostr-light-purple p-2 rounded-md transition-colors duration-200"
+          aria-label="Toggle theme"
+        >
+          <svg id="mobile-theme-toggle-dark-icon" class="hidden w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+            <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
+          </svg>
+          <svg id="mobile-theme-toggle-light-icon" class="hidden w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+            <path fill-rule="evenodd" d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" clip-rule="evenodd"></path>
+          </svg>
+        </button>
+        
+        <button
+          type="button"
+          class="text-gray-700 dark:text-gray-300 hover:text-nostr-purple dark:hover:text-nostr-light-purple focus:outline-none"
+          aria-label="Toggle menu"
+          id="mobile-menu-button"
+        >
+          <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </button>
+      </div>
+    </div>
+    
+    <div class="md:hidden hidden" id="mobile-menu">
+      <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white dark:bg-gray-800 border-t dark:border-gray-700">
+        {navItems.map((item) => (
+          <a
+            href={item.href}
+            class="text-gray-700 dark:text-gray-300 hover:text-nostr-purple dark:hover:text-nostr-light-purple block px-3 py-2 rounded-md text-base font-medium transition-colors duration-200"
+          >
+            {item.name}
+          </a>
+        ))}
+      </div>
+    </div>
+  </nav>
+</header>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const button = document.getElementById('mobile-menu-button');
+    const menu = document.getElementById('mobile-menu');
+    
+    button?.addEventListener('click', function() {
+      menu?.classList.toggle('hidden');
+    });
+
+    // Theme toggle functionality
+    const themeToggleBtn = document.getElementById('theme-toggle');
+    const mobileThemeToggleBtn = document.getElementById('mobile-theme-toggle');
+    const themeToggleDarkIcon = document.getElementById('theme-toggle-dark-icon');
+    const themeToggleLightIcon = document.getElementById('theme-toggle-light-icon');
+    const mobileThemeToggleDarkIcon = document.getElementById('mobile-theme-toggle-dark-icon');
+    const mobileThemeToggleLightIcon = document.getElementById('mobile-theme-toggle-light-icon');
+
+    function updateThemeIcons() {
+      const isDark = document.documentElement.classList.contains('dark');
+      
+      // Desktop icons
+      if (themeToggleDarkIcon && themeToggleLightIcon) {
+        themeToggleDarkIcon.classList.toggle('hidden', !isDark);
+        themeToggleLightIcon.classList.toggle('hidden', isDark);
+      }
+      
+      // Mobile icons
+      if (mobileThemeToggleDarkIcon && mobileThemeToggleLightIcon) {
+        mobileThemeToggleDarkIcon.classList.toggle('hidden', !isDark);
+        mobileThemeToggleLightIcon.classList.toggle('hidden', isDark);
+      }
+    }
+
+    function toggleTheme() {
+      document.documentElement.classList.toggle('dark');
+      updateThemeIcons();
+    }
+
+    // Initialize icons
+    updateThemeIcons();
+
+    // Add event listeners
+    themeToggleBtn?.addEventListener('click', toggleTheme);
+    mobileThemeToggleBtn?.addEventListener('click', toggleTheme);
+  });
+</script>

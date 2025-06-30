@@ -1,0 +1,253 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<Layout title="Get Started - Nostr BCH" description="Your guide to getting started with Nostr BCH">
+  <Header />
+  
+  <main class="pt-16">
+    <section class="bg-gradient-to-br from-gray-900 to-gray-800 dark:from-gray-950 dark:to-gray-900 text-white py-20 transition-colors duration-300">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <h1 class="text-4xl md:text-5xl font-bold mb-6">Get Started</h1>
+        <p class="text-xl text-gray-300 dark:text-gray-400 max-w-3xl mx-auto">
+          Your journey into decentralized social networking starts here. Follow these simple steps to join the Nostr BCH community.
+        </p>
+      </div>
+    </section>
+    
+    <section class="py-16 bg-white dark:bg-gray-900 transition-colors duration-300">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="space-y-12">
+          <div class="flex items-start space-x-6">
+            <div class="flex-shrink-0 w-12 h-12 bg-nostr-purple rounded-full flex items-center justify-center text-white font-bold text-lg">
+              1
+            </div>
+            <div class="flex-1">
+              <h2 class="text-2xl font-bold text-gray-900 dark:text-white mb-4">Choose a Nostr Client</h2>
+              <p class="text-gray-600 dark:text-gray-300 mb-6">
+                Select a Nostr client that suits your needs. Each client offers different features and user experiences.
+              </p>
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div class="border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:shadow-md dark:hover:shadow-gray-700/20 transition-shadow bg-white dark:bg-gray-800">
+                  <h3 class="font-semibold text-gray-900 dark:text-white mb-2">Damus (iOS)</h3>
+                  <p class="text-gray-600 dark:text-gray-300 text-sm mb-3">Native iOS app with beautiful design and full Nostr features.</p>
+                  <a href="https://damus.io" class="text-nostr-purple dark:text-nostr-light-purple hover:text-nostr-dark-purple font-medium text-sm">
+                    Download →
+                  </a>
+                </div>
+                <div class="border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:shadow-md dark:hover:shadow-gray-700/20 transition-shadow bg-white dark:bg-gray-800">
+                  <h3 class="font-semibold text-gray-900 dark:text-white mb-2">Amethyst (Android)</h3>
+                  <p class="text-gray-600 dark:text-gray-300 text-sm mb-3">Feature-rich Android client with advanced Nostr capabilities.</p>
+                  <a href="https://github.com/vitorpamplona/amethyst" class="text-nostr-purple dark:text-nostr-light-purple hover:text-nostr-dark-purple font-medium text-sm">
+                    Download →
+                  </a>
+                </div>
+                <div class="border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:shadow-md dark:hover:shadow-gray-700/20 transition-shadow bg-white dark:bg-gray-800">
+                  <h3 class="font-semibold text-gray-900 dark:text-white mb-2">Iris (Web)</h3>
+                  <p class="text-gray-600 dark:text-gray-300 text-sm mb-3">Web-based client that works in any browser.</p>
+                  <a href="https://iris.to" class="text-nostr-purple dark:text-nostr-light-purple hover:text-nostr-dark-purple font-medium text-sm">
+                    Open →
+                  </a>
+                </div>
+                <div class="border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:shadow-md dark:hover:shadow-gray-700/20 transition-shadow bg-white dark:bg-gray-800">
+                  <h3 class="font-semibold text-gray-900 dark:text-white mb-2">Snort (Web)</h3>
+                  <p class="text-gray-600 dark:text-gray-300 text-sm mb-3">Fast, modern web client with a clean interface.</p>
+                  <a href="https://snort.social" class="text-nostr-purple dark:text-nostr-light-purple hover:text-nostr-dark-purple font-medium text-sm">
+                    Open →
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="flex items-start space-x-6">
+            <div class="flex-shrink-0 w-12 h-12 bg-bch-green rounded-full flex items-center justify-center text-white font-bold text-lg">
+              2
+            </div>
+            <div class="flex-1">
+              <h2 class="text-2xl font-bold text-gray-900 dark:text-white mb-4">Generate Your Keys</h2>
+              <p class="text-gray-600 dark:text-gray-300 mb-6">
+                Your Nostr identity is based on a cryptographic key pair. Most clients will generate these for you automatically.
+              </p>
+              <div class="bg-yellow-50 dark:bg-yellow-900/20 border-l-4 border-yellow-400 p-4 rounded mb-6">
+                <div class="flex">
+                  <div class="flex-shrink-0">
+                    <svg class="h-5 w-5 text-yellow-400" viewBox="0 0 20 20" fill="currentColor">
+                      <path fill-rule="evenodd" d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z" clip-rule="evenodd"></path>
+                    </svg>
+                  </div>
+                  <div class="ml-3">
+                    <p class="text-sm text-yellow-700 dark:text-yellow-300">
+                      <strong>Important:</strong> Backup your private key (nsec) immediately! This is your identity and cannot be recovered if lost.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="space-y-3">
+                <div class="flex items-center">
+                  <svg class="w-5 h-5 text-green-500 mr-3" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                  </svg>
+                  <span class="text-gray-700 dark:text-gray-300">Private key (nsec) - Keep this secret and secure</span>
+                </div>
+                <div class="flex items-center">
+                  <svg class="w-5 h-5 text-green-500 mr-3" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                  </svg>
+                  <span class="text-gray-700 dark:text-gray-300">Public key (npub) - This is your Nostr address</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="flex items-start space-x-6">
+            <div class="flex-shrink-0 w-12 h-12 bg-purple-500 rounded-full flex items-center justify-center text-white font-bold text-lg">
+              3
+            </div>
+            <div class="flex-1">
+              <h2 class="text-2xl font-bold text-gray-900 dark:text-white mb-4">Set Up Your BCH Wallet</h2>
+              <p class="text-gray-600 dark:text-gray-300 mb-6">
+                To send and receive Bitcoin Cash tips and payments, you'll need a BCH wallet.
+              </p>
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div class="border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:shadow-md dark:hover:shadow-gray-700/20 transition-shadow bg-white dark:bg-gray-800">
+                  <h3 class="font-semibold text-gray-900 dark:text-white mb-2">Bitcoin.com Wallet</h3>
+                  <p class="text-gray-600 dark:text-gray-300 text-sm mb-3">User-friendly wallet for beginners with built-in BCH support.</p>
+                  <a href="https://wallet.bitcoin.com" class="text-bch-green hover:text-bch-dark-green font-medium text-sm">
+                    Download →
+                  </a>
+                </div>
+                <div class="border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:shadow-md dark:hover:shadow-gray-700/20 transition-shadow bg-white dark:bg-gray-800">
+                  <h3 class="font-semibold text-gray-900 dark:text-white mb-2">Electron Cash</h3>
+                  <p class="text-gray-600 dark:text-gray-300 text-sm mb-3">Advanced desktop wallet with full BCH features.</p>
+                  <a href="https://electroncash.org" class="text-bch-green hover:text-bch-dark-green font-medium text-sm">
+                    Download →
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="flex items-start space-x-6">
+            <div class="flex-shrink-0 w-12 h-12 bg-green-500 rounded-full flex items-center justify-center text-white font-bold text-lg">
+              4
+            </div>
+            <div class="flex-1">
+              <h2 class="text-2xl font-bold text-gray-900 dark:text-white mb-4">Start Connecting</h2>
+              <p class="text-gray-600 dark:text-gray-300 mb-6">
+                Now you're ready to start using Nostr BCH! Follow users, share content, and engage with the community.
+              </p>
+              <div class="space-y-3">
+                <div class="flex items-center">
+                  <svg class="w-5 h-5 text-green-500 mr-3" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                  </svg>
+                  <span class="text-gray-700 dark:text-gray-300">Complete your profile with a name and bio</span>
+                </div>
+                <div class="flex items-center">
+                  <svg class="w-5 h-5 text-green-500 mr-3" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                  </svg>
+                  <span class="text-gray-700 dark:text-gray-300">Find and follow interesting users</span>
+                </div>
+                <div class="flex items-center">
+                  <svg class="w-5 h-5 text-green-500 mr-3" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                  </svg>
+                  <span class="text-gray-700 dark:text-gray-300">Share your first note and engage with others</span>
+                </div>
+                <div class="flex items-center">
+                  <svg class="w-5 h-5 text-green-500 mr-3" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                  </svg>
+                  <span class="text-gray-700 dark:text-gray-300">Tip content creators with BCH</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Support the Project Section with QR Code -->
+        <div class="mt-16 bg-gradient-to-r from-bch-green to-green-600 dark:from-bch-dark-green dark:to-green-700 rounded-xl p-8 text-white">
+          <div class="text-center mb-8">
+            <h2 class="text-2xl font-bold mb-4">Support Nostr BCH Development</h2>
+            <p class="mb-6 max-w-2xl mx-auto">
+              Help us build the future of decentralized social networking! Your Bitcoin Cash donations support ongoing development, infrastructure, and community growth.
+            </p>
+          </div>
+          
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+            <div class="text-center lg:text-left">
+              <h3 class="text-xl font-semibold mb-4">How to Donate with BCH</h3>
+              <div class="space-y-3 text-green-100">
+                <div class="flex items-start lg:items-center">
+                  <span class="bg-white bg-opacity-20 rounded-full w-6 h-6 flex items-center justify-center text-sm font-bold mr-3 mt-1 lg:mt-0">1</span>
+                  <span>Open your Bitcoin Cash wallet app</span>
+                </div>
+                <div class="flex items-start lg:items-center">
+                  <span class="bg-white bg-opacity-20 rounded-full w-6 h-6 flex items-center justify-center text-sm font-bold mr-3 mt-1 lg:mt-0">2</span>
+                  <span>Scan the QR code or copy the address below</span>
+                </div>
+                <div class="flex items-start lg:items-center">
+                  <span class="bg-white bg-opacity-20 rounded-full w-6 h-6 flex items-center justify-center text-sm font-bold mr-3 mt-1 lg:mt-0">3</span>
+                  <span>Send any amount you'd like to contribute</span>
+                </div>
+              </div>
+            </div>
+            
+            <div class="text-center">
+              <div class="bg-white p-6 rounded-xl inline-block shadow-lg">
+                <div class="mb-4">
+                  <img 
+                    src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=bitcoincash:qqhplfm3845xpsxlfhqd5pm00yekelzf9cucae20eg" 
+                    alt="BCH Donation QR Code" 
+                    class="mx-auto rounded-lg"
+                    width="200" 
+                    height="200"
+                  />
+                </div>
+                <div class="text-gray-800">
+                  <p class="text-sm font-medium mb-2">BCH Donation Address:</p>
+                  <div class="bg-gray-100 p-3 rounded-lg">
+                    <code class="text-xs break-all font-mono">bitcoincash:qqhplfm3845xpsxlfhqd5pm00yekelzf9cucae20eg</code>
+                  </div>
+                  <button 
+                    onclick="navigator.clipboard.writeText('bitcoincash:qqhplfm3845xpsxlfhqd5pm00yekelzf9cucae20eg')" 
+                    class="mt-3 bg-bch-green hover:bg-bch-dark-green text-white px-4 py-2 rounded-lg text-sm font-medium transition-colors"
+                  >
+                    Copy Address
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="mt-8 text-center">
+            <p class="text-green-100 text-sm">
+              Every donation, no matter the size, helps us build better tools for the decentralized web. Thank you for your support! 🙏
+            </p>
+          </div>
+        </div>
+        
+        <div class="mt-16 bg-gradient-to-r from-nostr-purple to-bch-green dark:from-nostr-dark-purple dark:to-bch-dark-green rounded-xl p-8 text-white text-center">
+          <h2 class="text-2xl font-bold mb-4">Need Help?</h2>
+          <p class="mb-6">
+            Join our community channels for support and to connect with other Nostr BCH users.
+          </p>
+          <div class="flex flex-col sm:flex-row gap-4 justify-center">
+            <a href="/resources" class="bg-white text-nostr-purple px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors">
+              View Resources
+            </a>
+            <a href="https://t.me/nostrbch" class="border-2 border-white text-white px-6 py-3 rounded-lg font-semibold hover:bg-white hover:text-nostr-purple transition-colors">
+              Join Telegram
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  
+  <Footer />
+</Layout>

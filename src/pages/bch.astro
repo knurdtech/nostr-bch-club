@@ -1,0 +1,100 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<Layout title="Bitcoin Cash - Nostr BCH" description="Learn about Bitcoin Cash and its role in decentralized social networking">
+  <Header />
+  
+  <main class="pt-16">
+    <section class="bg-gradient-to-br from-bch-green to-bch-dark-green dark:from-bch-dark-green dark:to-green-800 text-white py-20 transition-colors duration-300">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <h1 class="text-4xl md:text-5xl font-bold mb-6">Bitcoin Cash</h1>
+        <p class="text-xl text-green-100 dark:text-green-200 max-w-3xl mx-auto">
+          Peer-to-peer electronic cash for the world. Fast, reliable, and affordable transactions that power the Nostr BCH ecosystem.
+        </p>
+      </div>
+    </section>
+    
+    <section class="py-16 bg-white dark:bg-gray-900 transition-colors duration-300">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12 mb-16">
+          <div>
+            <h2 class="text-2xl font-bold text-gray-900 dark:text-white mb-4">What is Bitcoin Cash?</h2>
+            <p class="text-gray-600 dark:text-gray-300 mb-6">
+              Bitcoin Cash (BCH) is a peer-to-peer electronic cash system that enables direct online payments between parties without going through a financial institution.
+            </p>
+            <p class="text-gray-600 dark:text-gray-300 mb-6">
+              Born from Bitcoin in 2017, BCH increased the block size limit to enable more transactions per second and lower fees, making it ideal for everyday transactions and microtransactions.
+            </p>
+            <div class="bg-green-50 dark:bg-green-900/20 border-l-4 border-bch-green p-4 rounded">
+              <p class="text-sm text-gray-700 dark:text-gray-300">
+                <strong>Fast:</strong> Transactions confirm in seconds<br>
+                <strong>Cheap:</strong> Fees typically under $0.01<br>
+                <strong>Reliable:</strong> Works 24/7 without downtime
+              </p>
+            </div>
+          </div>
+          
+          <div>
+            <h2 class="text-2xl font-bold text-gray-900 dark:text-white mb-4">Why BCH for Nostr?</h2>
+            <div class="space-y-4">
+              <div class="bg-gray-50 dark:bg-gray-800 p-4 rounded-lg border dark:border-gray-700">
+                <h3 class="font-semibold text-gray-900 dark:text-white mb-2">Microtransactions</h3>
+                <p class="text-gray-600 dark:text-gray-300 text-sm">Perfect for tipping content creators and small donations</p>
+              </div>
+              <div class="bg-gray-50 dark:bg-gray-800 p-4 rounded-lg border dark:border-gray-700">
+                <h3 class="font-semibold text-gray-900 dark:text-white mb-2">Global Reach</h3>
+                <p class="text-gray-600 dark:text-gray-300 text-sm">Send money anywhere in the world instantly</p>
+              </div>
+              <div class="bg-gray-50 dark:bg-gray-800 p-4 rounded-lg border dark:border-gray-700">
+                <h3 class="font-semibold text-gray-900 dark:text-white mb-2">No Intermediaries</h3>
+                <p class="text-gray-600 dark:text-gray-300 text-sm">Direct peer-to-peer transactions without banks</p>
+              </div>
+              <div class="bg-gray-50 dark:bg-gray-800 p-4 rounded-lg border dark:border-gray-700">
+                <h3 class="font-semibold text-gray-900 dark:text-white mb-2">Programmable Money</h3>
+                <p class="text-gray-600 dark:text-gray-300 text-sm">Smart contracts and advanced payment features</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="bg-gray-50 dark:bg-gray-800 rounded-xl p-8 mb-12 border dark:border-gray-700">
+          <h2 class="text-2xl font-bold text-gray-900 dark:text-white mb-6 text-center">BCH Transaction Stats</h2>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div class="text-center">
+              <div class="text-3xl font-bold text-bch-green mb-2">~$0.01</div>
+              <div class="text-gray-600 dark:text-gray-300">Average Transaction Fee</div>
+            </div>
+            <div class="text-center">
+              <div class="text-3xl font-bold text-bch-green mb-2">0-3 sec</div>
+              <div class="text-gray-600 dark:text-gray-300">Transaction Time</div>
+            </div>
+            <div class="text-center">
+              <div class="text-3xl font-bold text-bch-green mb-2">32MB</div>
+              <div class="text-gray-600 dark:text-gray-300">Block Size Limit</div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="bg-gradient-to-r from-bch-green to-green-600 dark:from-bch-dark-green dark:to-green-700 rounded-xl p-8 text-white">
+          <h2 class="text-2xl font-bold mb-4">Get Started with BCH</h2>
+          <p class="mb-6">
+            Ready to experience the power of Bitcoin Cash? Start by getting a wallet and receiving your first BCH.
+          </p>
+          <div class="flex flex-col sm:flex-row gap-4">
+            <a href="https://wallet.bitcoin.com" class="bg-white text-bch-green px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors">
+              Get BCH Wallet
+            </a>
+            <a href="https://bitcoincash.org" class="border-2 border-white text-white px-6 py-3 rounded-lg font-semibold hover:bg-white hover:text-bch-green transition-colors">
+              Learn More
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  
+  <Footer />
+</Layout>
